@@ -5,13 +5,16 @@ Tags: brute force, login security, security, firewall, 2FA
 License: GPLv2 or later
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 3.2.2
+Stable tag: 3.2.3
 
 Block excessive login attempts and protect your site against brute force attacks. Simple, yet powerful tools to improve site performance.
 
 == Description ==
 
-<a href="https://www.limitloginattempts.com">Limit Login Attempts Reloaded</a> functions as a robust deterrent against <a href="https://www.limitloginattempts.com/cracking-the-code-unveiling-the-mechanics-behind-brute-force-attacks/">brute force attacks</a>, bolstering your website's security measures and optimizing its performance. It achieves this by **restricting the number of login attempts allowed**. This applies not only to the standard login method, but also to XMLRPC, Woocommerce, and custom login pages. With more than 2.5 million active users, this plugin fulfills all your login security requirements.
+Limits the number of login attempts to prevent brute force attacks. Protects wp-login.php, XMLRPC, WooCommerce login pages, and custom login forms. Trusted by 2.5M+ sites.
+<a href="https://www.limitloginattempts.com">Limit Login Attempts Reloaded</a> works as a strong deterrent against <a href="https://www.limitloginattempts.com/cracking-the-code-unveiling-the-mechanics-behind-brute-force-attacks/">brute force attacks</a> by **restricting the number of login attempts allowed**, strengthening your site's security without slowing it down.
+
+https://www.youtube.com/watch?v=dX7Qu5MN2ok
 
 The plugin functions by automatically preventing further attempts from a particular Internet Protocol (IP) address and/or username once a predetermined limit of retries has been surpassed. This significantly weakens the effectiveness of brute force attacks on your website.
 
@@ -19,8 +22,6 @@ By default, WordPress permits an unlimited number of login attempts, posing a vu
 
 **Limit Login Attempts Reloaded Premium (Try Free with <a href="https://www.limitloginattempts.com/premium-security-zero-cost-discover-the-benefits-of-micro-cloud/">Micro Cloud</a>)**
 Upgrade to <a href="https://www.limitloginattempts.com/plans/">Limit Login Attempts Reloaded Premium</a> to extend cloud-based protection to the Limit Login Attempts Reloaded plugin, thereby enhancing your login security. The premium version includes a range of highly beneficial features, including <a href="https://www.limitloginattempts.com/features/ip-intelligence/">IP intelligence</a> to **detect, counter and deny malicious login attempts**. Your <a href="https://www.limitloginattempts.com/failed-login-attempts-in-wordpress/">failed login attempts</a> will be safely neutralized in the cloud so your website can function at its optimal performance during an attack.
-
-https://www.youtube.com/watch?v=JfkvIiQft14
 
 = Features (Free Version): =
 * **2FA** - Enable two-factor authentication for extra login security.
@@ -82,12 +83,6 @@ Plugin uses standard actions and filters only.
 
 Based on the original code from Limit Login Attempts plugin by Johan Eenfeldt.
 
-= Branding Guidelines =
-Limit Login Attempts Reloaded™ is a trademark of Atlantic Silicon Inc. When writing about the plugin, please make sure to use Reloaded after Limit Login Attempts. Limit Login Attempts is the old plugin.
-
-* Limit Login Attempts Reloaded (correct)
-* Limit Login Attempts (incorrect)
-
 == Screenshots ==
 
 1. Login screen after a failed login with remaining retries
@@ -144,6 +139,10 @@ The settings are explained within the plugin in great detail. If you are unsure,
 By default, you will need to copy and paste the lists to each site manually. For the <a href="https://www.limitloginattempts.com/plans/?from=wp-details">premium service</a>, sites are grouped within the same private cloud account. Each site within that group can be configured if it shares its lockouts and access lists with other group members. The setting is located in the plugin's interface. The default options are recommended.
 
 == Changelog ==
+
+= 3.2.3 =
+* Broadened MFA state cookie scope to the site root for wider path coverage.
+* Fixed Active Lockouts counter not showing on the local Logs page.
 
 = 3.2.2 =
 * Improved MFA rescue link compatibility on hosts with external object cache enabled.
